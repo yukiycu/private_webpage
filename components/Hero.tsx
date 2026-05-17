@@ -2,7 +2,7 @@ import { profile } from "@/data/profile";
 
 export function Hero() {
   return (
-    <section className="mx-auto grid min-h-[calc(100vh-65px)] max-w-6xl items-center gap-12 px-6 py-20 sm:px-8 lg:grid-cols-[1.25fr_0.75fr]">
+    <section className="mx-auto grid min-h-[calc(100vh-65px)] max-w-6xl items-center gap-12 px-6 py-20 sm:px-8 lg:grid-cols-[1.45fr_0.55fr]">
       <div>
         <p className="mb-5 text-sm font-medium uppercase tracking-[0.18em] text-accent">
           {profile.titleJa} / {profile.title}
@@ -23,7 +23,7 @@ export function Hero() {
       <div className="justify-self-start lg:justify-self-end">
         <div
           aria-label={`${profile.name} profile photo`}
-          className="flex aspect-square w-64 items-end overflow-hidden border border-line bg-panel bg-cover bg-center p-5 sm:w-80"
+          className="flex aspect-square w-44 items-end overflow-hidden border border-line bg-panel bg-cover bg-center p-4 sm:w-56 lg:w-64"
           style={{ backgroundImage: `url(${profile.image})` }}
         >
           <span className="bg-ink/70 px-3 py-2 text-sm text-zinc-400 backdrop-blur">
