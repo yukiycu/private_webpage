@@ -23,13 +23,9 @@ export function Hero() {
       <div className="justify-self-start lg:justify-self-end">
         <div
           aria-label={`${profile.name} profile photo`}
-          className="flex aspect-square w-44 items-end overflow-hidden border border-line bg-panel bg-cover bg-center p-4 sm:w-56 lg:w-64"
+          className="aspect-square w-44 overflow-hidden border border-line bg-panel bg-cover bg-center sm:w-56 lg:w-64"
           style={{ backgroundImage: `url(${profile.image})` }}
-        >
-          <span className="bg-ink/70 px-3 py-2 text-sm text-zinc-400 backdrop-blur">
-            Profile
-          </span>
-        </div>
+        />
       </div>
     </section>
   );
