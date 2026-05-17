@@ -30,6 +30,18 @@ export default function Home() {
                 </div>
               ))}
             </div>
+            <div>
+              <h3 className="mb-4 text-xl font-semibold text-white">経歴</h3>
+              <div className="space-y-4">
+                {profile.career.map((item) => (
+                  <div key={`${item.period}-${item.title}`} className="border border-line bg-panel p-5">
+                    <p className="text-sm text-accent">{item.period}</p>
+                    <p className="mt-2 leading-7 text-zinc-300">{item.title}</p>
+                    {item.note ? <p className="mt-2 leading-7 text-zinc-500">及び {item.note}</p> : null}
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </Section>
 
