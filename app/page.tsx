@@ -1,15 +1,11 @@
-import Link from "next/link";
 import { Card } from "@/components/Card";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Section } from "@/components/Section";
 import { profile } from "@/data/profile";
-import { getAllPosts } from "@/lib/blog";
 
 export default function Home() {
-  const posts = getAllPosts();
-
   return (
     <>
       <Header />
@@ -198,26 +194,6 @@ export default function Home() {
                 <p className="mt-3 leading-7 text-zinc-400">{book.authors}</p>
                 <p className="mt-2 leading-7 text-zinc-300">{book.venue}</p>
               </Card>
-            ))}
-          </div>
-        </Section>
-
-        <Section id="blog" eyebrow="Blog" title="雑記・研究メモ">
-          <div className="space-y-4">
-            {posts.map((post) => (
-              <Link key={post.slug} href={`/blog/${post.slug}`} className="block">
-                <Card>
-                  <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
-                    <div>
-                      <h3 className="text-xl font-semibold text-white transition hover:text-accent">
-                        {post.title}
-                      </h3>
-                      <p className="mt-3 max-w-2xl leading-7 text-zinc-400">{post.excerpt}</p>
-                    </div>
-                    <time className="shrink-0 text-sm text-zinc-500">{post.date}</time>
-                  </div>
-                </Card>
-              </Link>
             ))}
           </div>
         </Section>

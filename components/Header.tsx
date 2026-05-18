@@ -8,7 +8,6 @@ const navItems = [
   { href: "#fellowships", label: "採択" },
   { href: "#invited-talks", label: "講演" },
   { href: "#books", label: "書籍" },
-  { href: "#blog", label: "ブログ" },
   { href: "#contact", label: "連絡先" }
 ];
 
