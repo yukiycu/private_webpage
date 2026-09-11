@@ -1,3 +1,4 @@
+import { Authors } from '@/components/Authors';
 import { Card } from "@/components/Card";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -67,7 +68,9 @@ export default function Home() {
                     {publication.title}
                   </a>
                 </h3>
-                <p className="mt-3 leading-7 text-zinc-400">{publication.authors}</p>
+                <p className='mt-3 leading-7 text-zinc-400'>
+                  <Authors authors={publication.authors} />
+                </p>
                 <div className="mt-3 flex flex-wrap items-center gap-3">
                   <p className="text-zinc-300">{publication.venue}</p>
                   <a
@@ -130,9 +133,18 @@ export default function Home() {
               <div className="space-y-4">
                 {profile.presentations.map((presentation, index) => (
                   <Card key={`${presentation.year}-${index}-${presentation.title}`}>
-                    <p className="text-sm text-accent">{presentation.year}</p>
+                    <div className='flex flex-wrap items-center gap-3'>
+                      <p className='text-sm text-accent'>{presentation.year}</p>
+                      {presentation.format ? (
+                        <span className='border border-line px-2 py-1 text-xs text-zinc-300'>
+                          {presentation.format}
+                        </span>
+                      ) : null}
+                    </div>
                     <h4 className="mt-2 text-lg font-semibold text-white">{presentation.title}</h4>
-                    <p className="mt-3 leading-7 text-zinc-400">{presentation.authors}</p>
+                    <p className='mt-3 leading-7 text-zinc-400'>
+                      <Authors authors={presentation.authors} />
+                    </p>
                     <p className="mt-2 leading-7 text-zinc-300">{presentation.venue}</p>
                   </Card>
                 ))}
@@ -191,7 +203,9 @@ export default function Home() {
                     {book.title}
                   </a>
                 </h3>
-                <p className="mt-3 leading-7 text-zinc-400">{book.authors}</p>
+                <p className='mt-3 leading-7 text-zinc-400'>
+                  <Authors authors={book.authors} />
+                </p>
                 <p className="mt-2 leading-7 text-zinc-300">{book.venue}</p>
               </Card>
             ))}

@@ -1,3 +1,11 @@
+type Presentation = {
+  year: string;
+  format: '口頭発表' | 'ポスター発表' | null;
+  title: string;
+  authors: string;
+  venue: string;
+};
+
 export const profile = {
   name: "Yuki Murakami",
   nameJa: "村上 優貴",
@@ -158,18 +166,21 @@ export const profile = {
   presentations: [
     {
       year: "2026",
+      format: '口頭発表',
       title: "PROTAC-TS : 細胞膜透過性を考慮したPROTACリンカー生成AI",
       authors: "村上 優貴、石田 祥一、長 展生、幸 瞳、大田 雅照、本間 光貴、出水 庸介、寺山 慧",
       venue: "日本薬学会第146年会、GS05-3、関西大学 千里山キャンパス、2026年3月26日-29日"
     },
     {
       year: "2025",
+      format: 'ポスター発表',
       title: "Machine learning-based PROTAC linker design method to enhance cell membrane permeability",
       authors: "Yuki Murakami, Shoichi Ishida, Masateru Ohta, Teruki Honma, Yosuke Demizu, Kei Terayama",
       venue: "The International Chemical Congress of Pacific Basin Societies 2025, Hawaii, 2025/12/15-20"
     },
     {
       year: "2025",
+      format: 'ポスター発表',
       title: "Data-driven Design of PROTAC Linkers to enhance Cell Membrane Permeability",
       authors:
         "Yuki Murakami, Shoichi Ishida, Nobuo Cho, Hitomi Yuki, Masateru Ohta, Teruki Honma, Yosuke Demizu, Kei Terayama",
@@ -177,66 +188,77 @@ export const profile = {
     },
     {
       year: "2025",
+      format: 'ポスター発表',
       title: "細胞膜透過性を加味したPROTACリンカー生成AIの開発",
       authors: "村上 優貴、石田 祥一、大田 雅照、本間 光貴、出水 庸介、寺山 慧",
       venue: "日本薬学会第145年会、27P-am130S、福岡国際会議場 他、2025年3月26日-29日"
     },
     {
       year: "2024",
+      format: 'ポスター発表',
       title: "細胞膜透過性を考慮したPROTACリンカー生成AIの開発",
       authors: "村上優貴、石田祥一、出水庸介、寺山慧",
       venue: "第52回構造活性相関シンポジウム、KP15、川崎市産業振興会館、2024年12月12日-13日"
     },
     {
       year: "2024",
+      format: 'ポスター発表',
       title: "De novo PROTAC linker design to enhance cell membrane permeability based on a data-driven method",
       authors: "Yuki Murakami, Shoichi Ishida, Yosuke Demizu, Kei Terayama",
       venue: "CBI学会2024年大会、P07-06、タワーホール船堀、2024年10月28日-31日"
     },
     {
       year: "2024",
+      format: '口頭発表',
       title: "ラボラトリーオートメーションの実現に向けた抗菌ペプチド設計におけるワークフロー開発",
       authors: "村上優貴、石田祥一、出水庸介、寺山慧",
       venue: "第24回日本蛋白質科学会年会、WS3-4、札幌コンベンションセンター、2024年6月11-13日"
     },
     {
       year: "2023",
+      format: '口頭発表',
       title: "多目的ベイズ最適化を用いた非天然アミノ酸を考慮した抗菌ペプチド設計手法の検討",
       authors: "村上優貴、石田祥一、出水庸介、寺山慧",
       venue: "日本薬学会 第143年会、27E2-pm17S、札幌、2023年3月25日-28日"
     },
     {
       year: "2022",
+      format: 'ポスター発表',
       title: "Multi-objective Bayesian optimization for antimicrobial peptides design using non-natural amino acids",
       authors: "Y. Murakami, S. Ishida, Y. Demizu, K. Terayama",
-      venue: "情報計算科学生物学会2022年大会(CBI2022)、P08-17、タワーホール船堀、2022年10月25-27日（ポスター）"
+      venue: "情報計算科学生物学会2022年大会(CBI2022)、P08-17、タワーホール船堀、2022年10月25-27日"
     },
     {
       year: "2022",
+      format: 'ポスター発表',
       title: "非天然アミノ酸を加味した低毒性抗菌ペプチド設計に向けた多目的ベイズ最適化の検討",
       authors: "Y. Murakami, S. Ishida, Y. Demizu, K. Terayama",
-      venue: "第11回生命医薬情報学連合大会(IIBMP2022), P-72, 大阪, 2022年9月14日（ポスター）"
+      venue: "第11回生命医薬情報学連合大会(IIBMP2022), P-72, 大阪, 2022年9月14日"
     },
     {
       year: "2022",
+      format: null,
       title: "Structure-activity relationship study of PROTACs against hematopoietic prostaglandin D2 synthase",
       authors: "Osawa, H., Kurohara, T., Murakami, Y., Shibata, N., Naito, M., Demizu, Y.",
       venue: "Ubiquitin New Frontier “from Neo-Biology to Targeted Protein Degradation”, Tokyo, 2022年12月"
     },
     {
       year: "2022",
+      format: '口頭発表',
       title: "Structure-activity relationship study of PROTACs against hematopoietic prostaglandin D2 synthase",
       authors: "大澤陽、黒原崇、村上優貴、柴田識人、内藤幹彦、出水庸介",
       venue: "CBI学会2022年大会、東京、2022年10月"
     },
     {
       year: "2022",
+      format: 'ポスター発表',
       title: "H-PGDS分解誘導剤の構造活性相関研究",
       authors: "村上優貴、黒原崇、横尾英知、伊藤貴仁、柳瀬雄太、柴田識人、有竹浩介、内藤幹彦、出水庸介",
       venue: "日本薬学会第142年会、名古屋、2022年3月"
     },
     {
       year: "2021",
+      format: 'ポスター発表',
       title: "Discovery of a highly potent and selective PROTAC targeting hematopoietic prostaglandin D synthase via in silico design",
       authors:
         "Yokoo, H., Shibata, N., Endo, A., Ito, T., Yanase, Y., Murakami, Y., Fujii, K., Saeki, Y., Naito, M., Aritake, K., Demizu, Y.",
@@ -244,23 +266,26 @@ export const profile = {
     },
     {
       year: "2021",
+      format: '口頭発表',
       title: "造血器型プロスタグランジンD合成酵素分解誘導剤の創製",
       authors: "村上優貴、大澤陽、柴田識人、横尾英知、伊藤貴仁、柳瀬雄太、黒原崇、出水庸介",
       venue: "第65回日本薬学会関東支部大会、Web、2021年9月"
     },
     {
       year: "2021",
+      format: null,
       title: "高活性・高選択的な造血器型プロスタグランジンD合成酵素分解誘導剤の開発",
       authors: "横尾英知、柴田識人、遠藤彬則、伊藤貴仁、柳瀬雄太、村上優貴、藤井清永、大庭誠、佐伯泰、内藤幹彦、有竹浩介、出水庸介",
       venue: "ケミカルバイオロジー第15回年会、福岡（Web）、2021年6月"
     },
     {
       year: "2021",
+      format: 'ポスター発表',
       title: "造血器型プロスタグランジン合成酵素を標的とした分解誘導剤の開発",
-      authors: "横尾英知、柴田識人、永沼美弥子、村上優希、藤井清永、伊藤貴仁、有竹浩介、内藤幹彦、出水庸介",
+      authors: '横尾英知、柴田識人、永沼美弥子、村上優貴、藤井清永、伊藤貴仁、有竹浩介、内藤幹彦、出水庸介',
       venue: "日本薬学会第141年会、広島、2021年3月"
     }
-  ],
+  ] satisfies Presentation[],
   invitedTalks: [
     {
       year: "2026",

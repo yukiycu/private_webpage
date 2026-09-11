@@ -9,7 +9,7 @@ type SectionProps = {
 
 export function Section({ id, eyebrow, title, children }: SectionProps) {
   return (
-    <section id={id} className="border-t border-line py-20 sm:py-24">
+    <section id={id} tabIndex={-1} className='scroll-mt-20 border-t border-line py-20 outline-none sm:py-24'>
       <div className="mx-auto grid max-w-6xl gap-10 px-6 sm:px-8 lg:grid-cols-[0.8fr_1.6fr]">
         <div>
           <p className="mb-3 text-sm font-medium uppercase tracking-[0.18em] text-accent">

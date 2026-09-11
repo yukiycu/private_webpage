@@ -1,6 +1,6 @@
 # Portfolio Site
 
-Personal researcher website built with Next.js, React, TypeScript, Tailwind CSS, and Markdown blog files.
+Personal researcher website built with Next.js, React, TypeScript, and Tailwind CSS.
 
 ## Getting Started
 
@@ -17,31 +17,21 @@ Open http://localhost:3000.
 npm run build
 ```
 
-## Blog
-
-Add Markdown or MDX files to `content/blog`.
-
-Each post uses frontmatter:
-
-```md
----
-title: "Post title"
-date: "2026-05-17"
-excerpt: "Short summary."
----
-```
-
-The blog list is shown on the home page, and each post is available at `/blog/[slug]`.
-
 ## Profile
 
 Edit profile content in `data/profile.ts`.
+
+Presentation formats use `口頭発表` or `ポスター発表`. Set `format` to `null`
+until the format is verified; the badge is then omitted. Verification sources and
+pending entries are recorded in `STATUS.md`.
 
 Place the profile photo at:
 
 ```text
 public/images/profile.jpg
 ```
+
+The profile image is served in responsive sizes through Next.js Image Optimization.
 
 ## Deploy to Vercel
 

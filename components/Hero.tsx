@@ -1,4 +1,5 @@
-import { profile } from "@/data/profile";
+import Image from 'next/image';
+import { profile } from '@/data/profile';
 
 export function Hero() {
   return (
@@ -21,11 +22,16 @@ export function Hero() {
         </div>
       </div>
       <div className="justify-self-start lg:justify-self-end">
-        <div
-          aria-label={`${profile.name} profile photo`}
-          className="aspect-square w-44 overflow-hidden border border-line bg-panel bg-cover bg-center sm:w-56 lg:w-64"
-          style={{ backgroundImage: `url(${profile.image})` }}
-        />
+        <div className='relative aspect-square w-44 overflow-hidden border border-line bg-panel sm:w-56 lg:w-64'>
+          <Image
+            src={profile.image}
+            alt={`${profile.nameJa}のプロフィール画像`}
+            fill
+            sizes='(min-width: 1024px) 256px, (min-width: 640px) 224px, 176px'
+            preload
+            className='object-cover'
+          />
+        </div>
       </div>
     </section>
   );
