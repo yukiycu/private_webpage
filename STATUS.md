@@ -2,6 +2,16 @@
 
 更新日: 2026-11-13
 
+## 2026-11-13 研究テーマ・受賞更新
+
+- 研究テーマのPROTAC設計を、リンカー生成からリガンドとリンカーの統合設計・三者複合体評価を含む多目的設計へ拡張。CBI2026 P09-14と第54回構造活性相関シンポジウム KP-21の内容に対応。
+- ChemTSv3による柔軟な探索空間制御、クロマトグラフィー精製条件予測を独立した研究テーマとして追加。既存のH-PGDS構造活性相関、抗菌ペプチド設計、統合解析・自動化のテーマを維持し、自己紹介にも反映。精製の記述は本人指定のChemRxiv論文に基づく。
+- 日本薬学会第142年会（2022年）の学生優秀発表賞（ポスター発表の部）を追加。[NIHS掲載の横尾氏CV（21ページ・項目92）](https://www.nihs.go.jp/doc/pdf/CV_H.Yokoo.pdf#page=21)で演題と受賞を確認。
+- 同年会の学会発表欄を「名古屋（オンライン開催）」へ訂正。[組織委員会の開催案内](https://www-yaku.meijo-u.ac.jp/pharm142/index.html)で全オンライン開催への変更を確認。
+- 受賞欄のリンクラベルを「受賞情報」に変更。
+- 検証: `npm run lint`、`npm run build`（TypeScript検査を含む）、`git diff --check` が成功。生成HTMLで研究テーマ6件、追加受賞と出典リンク、オンライン開催の表記、受賞リンク3件を確認。既存のBrowserslistデータの更新警告あり。
+- CBI2026の[ポスター賞一覧](https://cbi-society.org/taikai/taikai26/document/2026award_poster_best_like.pdf)と[学生要旨賞一覧](https://cbi-society.org/taikai/taikai26/document/award_Excellent_Student_Abstract_Award.pdf)を確認。本人名・演題番号P09-14は掲載されていないため追加なし。第54回構造活性相関シンポジウムの公式ページでは受賞情報を確認できず、追加していない。
+
 ## 2026-11-13 業績更新
 
 - ChemTSv3の論文「Generalizing molecular design via flexible search space control」を追加。出版社ページと[YCU研究室の論文一覧](https://ycu-iil.github.io/cls-lab.jp.github.io/publications/)で題名・著者順・年・掲載誌・DOIを照合。出版社の書誌メタデータに巻・記事番号の記載がなかったため、掲載誌名のみ表示。

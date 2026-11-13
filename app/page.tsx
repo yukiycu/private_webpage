@@ -122,7 +122,7 @@ export default function Home() {
                       rel="noreferrer"
                       className="mt-4 inline-block text-sm text-accent underline-offset-4 hover:underline"
                     >
-                      受賞コメント
+                      受賞情報
                     </a>
                   </Card>
                 ))}
