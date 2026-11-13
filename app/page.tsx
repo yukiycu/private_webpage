@@ -150,9 +150,6 @@ export default function Home() {
                 ))}
               </div>
             </div>
-            <p className="text-sm leading-7 text-zinc-500">
-              学会発表情報は横浜市立大学生命情報科学研究室および国立医薬品食品衛生研究所有機化学部の研究業績一覧を参照して整理しています。
-            </p>
           </div>
         </Section>
 

@@ -71,6 +71,22 @@ export const profile = {
   ],
   publications: [
     {
+      year: '2026',
+      authors:
+        'Yuki Murakami, Nobuo Cho, Kosei Egami, Hiroto Yamazaki, Shoichi Ishida, Aoi Hirano, Yuri Fukushima, Masato Sumita, Ai Kohata, Kazushi Kinbara, Kei Terayama',
+      title: 'Guiding chromatographic purification through data-driven condition recommendations',
+      venue: 'ChemRxiv（プレプリント・未査読）',
+      url: 'https://chemrxiv.org/doi/full/10.26434/chemrxiv.15009978/v1'
+    },
+    {
+      year: '2026',
+      authors:
+        'Satoru Fujii, Yuki Murakami, Tatsuya Yoshizawa, Shoichi Ishida, Nobuo Cho, Masateru Ohta, Teruki Honma, Kazuki Yoshizoe, Masato Sumita, Koji Tsuda, Kei Terayama',
+      title: 'Generalizing molecular design via flexible search space control',
+      venue: 'Communications Chemistry',
+      url: 'https://doi.org/10.1038/s42004-026-02172-7'
+    },
+    {
       year: "2026",
       authors:
         "Yuki Murakami, Shoichi Ishida, Nobuo Cho, Hitomi Yuki, Masateru Ohta, Teruki Honma, Yosuke Demizu, Kei Terayama",
@@ -164,6 +180,41 @@ export const profile = {
     }
   ],
   presentations: [
+    {
+      year: '2026',
+      format: 'ポスター発表',
+      title: '三者複合体評価に基づくPROTACのリガンドとリンカーの統合設計',
+      authors: '村上優貴、藤井慧、長展生、大田雅照、本間光貴、出水庸介、寺山慧',
+      venue: '第54回構造活性相関シンポジウム、KP-21、文部科学省研究交流センター（つくば）、2026年11月12日-13日'
+    },
+    {
+      year: '2026',
+      format: '口頭発表',
+      title: '柔軟な探索空間制御を可能にする分子設計AI基盤ChemTSv3の開発',
+      authors: '藤井慧、村上優貴、吉澤竜哉、石田祥一、長展生、大田雅照、本間光貴、美添一樹、隅田真人、津田宏治、寺山慧',
+      venue: '第54回構造活性相関シンポジウム、KO-06、文部科学省研究交流センター（つくば）、2026年11月12日-13日'
+    },
+    {
+      year: '2026',
+      format: 'ポスター発表',
+      title: '大規模言語モデルによるクロマトグラフィー精製条件予測',
+      authors: '平野碧、村上優貴、江上倖生、長展生、山崎寛人、隅田真人、石田祥一、木幡愛、金原数、寺山慧',
+      venue: '第54回構造活性相関シンポジウム、KP-07、文部科学省研究交流センター（つくば）、2026年11月12日-13日'
+    },
+    {
+      year: '2026',
+      format: 'ポスター発表',
+      title: 'From Building Blocks to PROTACs: Multi-Objective Whole-PROTAC Optimization through Ligand-Linker Recombination with Ternary Complex Evaluation',
+      authors: 'Yuki Murakami, Satoru Fujii, Nobuo Cho, Masateru Ohta, Teruki Honma, Yosuke Demizu, Kei Terayama',
+      venue: 'CBI学会2026年大会、P09-14、タワーホール船堀、2026年10月26日-29日'
+    },
+    {
+      year: '2026',
+      format: 'ポスター発表',
+      title: 'Prediction of Chromatographic Purification Conditions Using Large Language Models',
+      authors: 'Aoi Hirano, Yuki Murakami, Kosei Egami, Nobuo Cho, Hiroto Yamazaki, Masato Sumita, Shoichi Ishida, Ai Kohata, Kazushi Kinbara, Kei Terayama',
+      venue: 'CBI学会2026年大会、P02-13、タワーホール船堀、2026年10月26日-29日'
+    },
     {
       year: "2026",
       format: '口頭発表',

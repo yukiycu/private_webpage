@@ -1,6 +1,22 @@
 # 作業状況
 
-更新日: 2026-09-12
+更新日: 2026-11-13
+
+## 2026-11-13 業績更新
+
+- ChemTSv3の論文「Generalizing molecular design via flexible search space control」を追加。出版社ページと[YCU研究室の論文一覧](https://ycu-iil.github.io/cls-lab.jp.github.io/publications/)で題名・著者順・年・掲載誌・DOIを照合。出版社の書誌メタデータに巻・記事番号の記載がなかったため、掲載誌名のみ表示。
+  - https://doi.org/10.1038/s42004-026-02172-7
+- CBI学会2026年大会のポスター発表2件を追加。公式要旨で演題名・著者順を確認し、会期（10月26〜29日）と会場を公式大会ページで確認。
+  - https://cbi-society.org/taikai/taikai26/abstracts/Poster_ab/P09-14.html
+  - https://cbi-society.org/taikai/taikai26/abstracts/Poster_ab/P02-13.html
+  - https://cbi-society.org/taikai/taikai26/index.html
+- 第54回構造活性相関シンポジウムの発表3件（KP-21、KO-06、KP-07）を追加。公式プログラムで演題名・著者順・口頭／ポスターを確認。会期は11月12〜13日、会場は文部科学省研究交流センター。
+  - https://www.qsarj.org/54sympo/program.php
+  - https://www.qsarj.org/54sympo/
+- ページ内の「学会発表情報は…参照して整理しています。」の注記を削除。
+- 本人指定のChemRxivページをブラウザで確認し、精製の論文「Guiding chromatographic purification through data-driven condition recommendations」を追加。著者順・2026年10月6日公開・Version 1・未査読を確認し、掲載誌欄に「ChemRxiv（プレプリント・未査読）」と明記。
+  - https://chemrxiv.org/doi/full/10.26434/chemrxiv.15009978/v1
+- 検証: 最終変更後の `npm run lint`、`npm run build`（TypeScript検査を含む）、`git diff --check` が成功。生成HTMLで追加論文2件・発表5件・本人名31か所のstrong要素・論文リンク・注記削除を確認。ビルド時に既存のBrowserslistデータが古い旨の警告あり（ビルドは成功）。
 
 ## 対応済み
 
